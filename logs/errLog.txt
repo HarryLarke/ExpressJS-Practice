@@ -1,0 +1,5 @@
+31:03:22	11032025	0b2d5c2a-ee37-48f5-94a3-3917890a01cb	ReferenceError: cosole is not defined
+35:04:22	11032025	01656d07-799d-4013-94fb-64bcbf1cb1c6	Error: Not allowed by CORS
+50:05:22	11032025	24d5d33a-dae6-4d44-be4d-05dc7553604b	Error: Not allowed by CORS
+20:06:22	11032025	4831c305-8fec-4931-901d-af8a58a3b23a	Error: Not allowed by CORS
+30:08:22	11032025	56bef39b-8482-4da5-b2b0-07f1cef98427	Error: Not allowed by CORS

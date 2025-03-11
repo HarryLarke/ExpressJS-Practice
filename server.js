@@ -15,10 +15,13 @@ app.use(express.urlencoded({ extended: false}))
 app.use(express.json())
 
 app.use(express.static(path.join(__dirname, '/public')))
+app.use('/', require('./routes/api/users'))
 
 app.use('/', require('./routes/root'))
-app.use('/', require('./routes/reg'))
-app.use('/', require('./routes/login'))
+app.use('/reg', require('./routes/reg'))
+app.use('/login', require('./routes/login'))
+
+
 
 app.all('*', (req, res) => {
     res.status(404)
