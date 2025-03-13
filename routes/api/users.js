@@ -5,7 +5,7 @@ const userController = require('../../controllers/userController')
 router.route('/users')
 
     .post(userController)
-
+    .get()//Fill in! 
     
 
 module.exports = router

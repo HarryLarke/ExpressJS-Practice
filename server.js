@@ -1,13 +1,17 @@
+require('dotenv').config()
 const express = require('express')
 const app = express() 
 const path = require('path')
 const cors = require('cors')
+const mongoose = require('mongoose')
 const corsOptions = require('./config/corsOptions')
 const credentials = require('./middleware/credentials')
 const { logger } = require('./middleware/logEvents')
 const logError = require('./middleware/logError')
+const connectDB = require('./config/dbConn')
 const PORT = process.env.PORT || 3500
 
+connectDB()
 app.use(logger)
 app.use(credentials)
 app.use(cors(corsOptions))
@@ -20,8 +24,7 @@ app.use('/', require('./routes/api/users'))
 app.use('/', require('./routes/root'))
 app.use('/reg', require('./routes/reg'))
 app.use('/login', require('./routes/login'))
-
-
+//JWT controller here!! 
 
 app.all('*', (req, res) => {
     res.status(404)
@@ -38,4 +41,8 @@ app.all('*', (req, res) => {
 
 app.use(logError)
 
-app.listen(PORT, () => {console.log(`Server running on port ${PORT}`)})
+mongoose.connection.once('open', () => {
+    console.log('Connected to MongoDb!')
+    app.listen(PORT, () => {console.log(`Server running on port ${PORT}`)})
+})
+
