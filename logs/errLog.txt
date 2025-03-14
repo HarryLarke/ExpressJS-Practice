@@ -3,3 +3,10 @@
 50:05:22	11032025	24d5d33a-dae6-4d44-be4d-05dc7553604b	Error: Not allowed by CORS
 20:06:22	11032025	4831c305-8fec-4931-901d-af8a58a3b23a	Error: Not allowed by CORS
 30:08:22	11032025	56bef39b-8482-4da5-b2b0-07f1cef98427	Error: Not allowed by CORS
+39:39:13	14032025	57fc3a45-ddd9-4a67-8102-196ca08ef671	ReferenceError: sendStatus is not defined
+45:39:13	14032025	8edb62dc-736b-40f1-8650-cb837a09e096	ReferenceError: sendStatus is not defined
+39:41:13	14032025	0a4e36de-9df7-42a9-87ae-4f56e5889304	TypeError: res.sendStatus is not a function
+34:44:13	14032025	a77d224a-4a58-4eb7-8702-32927d1a164d	TypeError: res.sendStatus is not a function
+20:45:13	14032025	2eeef3e9-e9ac-4ab5-b625-b175ce8e57a8	TypeError: res.sendStatus is not a function
+37:50:13	14032025	73f5ae61-3810-4c66-a446-1cdfdcd75cd9	TypeError: res.sendStatus is not a function
+36:02:14	14032025	b284a548-fff3-47f1-8cfe-2d3c76b63cd0	ReferenceError: path is not defined
